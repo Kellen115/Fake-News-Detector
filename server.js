@@ -5,7 +5,6 @@ import cors from "cors";
 const app = express();
 app.use(express.json());
 
-// ✅ Allow only your frontend domain
 app.use(
   cors({
     origin: "https://kellen115.github.io",
@@ -74,3 +73,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`✅ Backend running on http://localhost:${PORT}`);
 });
+
